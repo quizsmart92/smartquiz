@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Public Sans';
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#nav{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    padding: 0 30px;
+    top: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#nav>h1{
+    font-size: 28px;
+    font-weight: 100;
+}
+#start{
+        border-radius: 20px;
+        border: 1px solid #00b300;
+        background:springgreen;
+        color: #FFF;
+        font-size: 17px;
+        font-weight: bold; 
+        padding: 15px 45px; 
+        letter-spacing: 1px;
+        margin-top: 70px;
+        text-transform: uppercase; 
+        position: relative;
+}
+#start:hover{
+    background-color: #fff;
+    color: #00b300;
+    cursor: pointer;
+}
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#nav #part2 a{
+    text-decoration: none;
+    color: black;
+    margin: 20px;
+
+}
+#nav #part2 a:nth-last-child(1){
+    padding: 7px 18px;
+    border-radius:50px;
+    position: relative;
+    border: 1px solid black;
+    overflow: hidden;
+}
+#nav #part2 a:nth-last-child(1) #green{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: springgreen;
+    top: 0;
+    left: -100%;
+    transition: left 0.4s ease;
+}
+#nav #part2 a:nth-last-child(1):hover #green{
+    left: 0;
+}
+#nav #part2 a:nth-last-child(1) h5{
+    font-weight: 100;
+    position: relative;
+    z-index: 99;
+}
+#main>h1{
+    font-size: 5.4vw;
+    font-weight: 300;
+    text-transform: capitalize;
+    width: 60%;
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
+#main>h1::after{
+    content: "";
+    position: absolute;
+    width: 49%;
+    height: 16px;
+    /* background-color: red; */
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    bottom: 0;
+    left: 71%;
+    transform: translate(-50%,0);
+
+}
+#main #img1{
+    height: 450px;
+    width: 280px;
+    position: absolute;
+    left: 7%;
+    top: 20%;
+}
+#main #img2{
+    height: 270px;
+    width: 280px;
+    position: absolute;
+    right: 25%;
+    top: 18%;
+}
+#main #img3{
+    height: 280px;
+    width: 380px;
+    position: absolute;
+   right : 7%;
+    bottom: 6%;
+}
+#main img{
+    transition: margin 0.9s ease;
+    border-radius: 10%;
+}
+#main img:hover{
+    margin-top: -20px;
+}
+#page2{
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#page2 h5{
+    font-size: 19px;
+    font-weight: 500;
+}
+#page2 h1{
+    font-size:49px ;
+    width: 60%;
+    text-align: center;
+    font-weight: 300;
+    margin: 30px 0;
+    position: relative;
+}
+#page2 h1::after{
+    content: ""; /* jo bhi content me aayega vo h1 ke end me dikhega*/
+    position: absolute;
+    height: 75px;
+    width: 209px;
+    /* background-color: red; */
+    bottom: -9px;
+    left: 49%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+
+}
+#about-us{
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+}
+#about-us>h4{
+    font-size:28px;
+    font-weight: 500;
+}
+#greendiv{
+    height: 40px;
+    width: 80px;
+    border-radius:50px ;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#greendiv img{
+    height: 40px;
+}
+#page3 {
+    position: relative;
+    height: 70vh; /* Adjust the height as needed */
+    width: 100%;
+    background-color:#fff; /* Same background as #page2 */
+    color: black; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px; /* Add some padding for better spacing */
+}
+
+#page3 h5 {
+    font-size: 19px;
+    font-weight: 500; /* Same styling as #page2 h5 */
+}
+
+#page3 h1 {
+    font-size:49px ;
+    width: 60%;
+    text-align: center;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+#page3 p {
+    text-align: center; /* Center text */
+    margin: 10px 0; /* Add margin for spacing */
+    font-size: 18px; /* Optional: adjust font size */
+}
+
+#page3 ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+#page3 li {
+    margin: 5px 0; /* Add some spacing between list items */
+    font-size: 16px; /* Optional: adjust font size */
+}
+
+#page3 a {
+    color: #4caf50; /* Change link color for visibility */
+    text-decoration: underline; /* Underline links for emphasis */
+}
+#partners{
+    width: 100%;
+    height: 70vh;
+    padding: 50px 30px;
+}
+#partners h1{
+    font-size:49px ;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    margin: 30px 0;
+  }
+  /* Slider */
+  
+  .slick-slide {
+      margin: 0px 20px;
+  }
+  
+  .slick-slide img {
+      width: 100%;
+  }
+  
+  .slick-slider
+  {
+      position: relative;
+      display: block;
+      box-sizing: border-box;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+              user-select: none;
+      -webkit-touch-callout: none;
+      -khtml-user-select: none;
+      -ms-touch-action: pan-y;
+          touch-action: pan-y;
+      -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list
+  {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+  }
+  .slick-list:focus
+  {
+      outline: none;
+  }
+  .slick-list.dragging
+  {
+      cursor: pointer;
+      cursor: hand;
+  }
+  
+  .slick-slider .slick-track,
+  .slick-slider .slick-list
+  {
+      -webkit-transform: translate3d(0, 0, 0);
+         -moz-transform: translate3d(0, 0, 0);
+          -ms-transform: translate3d(0, 0, 0);
+           -o-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+  }
+  
+  .slick-track
+  {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: block;
+  }
+  .slick-track:before,
+  .slick-track:after
+  {
+      display: table;
+      content: '';
+  }
+  .slick-track:after
+  {
+      clear: both;
+  }
+  .slick-loading .slick-track
+  {
+      visibility: hidden;
+  }
+  
+  .slick-slide
+  {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+  }
+  [dir='rtl'] .slick-slide
+  {
+      float: right;
+  }
+  .slick-slide img
+  {
+      display: block;
+  }
+  .slick-slide.slick-loading img
+  {
+      display: none;
+  }
+  .slick-slide.dragging img
+  {
+      pointer-events: none;
+  }
+  .slick-initialized .slick-slide
+  {
+      display: block;
+  }
+  .slick-loading .slick-slide
+  {
+      visibility: hidden;
+  }
+  .slick-vertical .slick-slide
+  {
+      display: block;
+      height: auto;
+      border: 1px solid transparent;
+  }
+  .slick-arrow.slick-hidden {
+      display: none;
+  }
+#footer {
+    background-color: black; /* Match with #page2 and #page3 */
+    color: #fff; /* White text color */
+    padding: 20px 0; /* Padding for top and bottom */
+    text-align: center; /* Center text */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limit width for better readability */
+    margin: 0 auto; /* Center the content */
+}
+
+#footer h5 {
+    font-size: 22px; /* Footer heading size */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+#footer p {
+    font-size: 14px; /* Footer text size */
+    margin: 10px 0; /* Space above and below */
+}
+
+.footer-links {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 10px 0; /* Space above and below */
+}
+
+.footer-links li {
+    display: inline; /* Display list items inline */
+    margin: 0 15px; /* Space between links */
+}
+
+.footer-links a {
+    color: #4caf50; /* Change link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
